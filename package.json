@@ -4,10 +4,10 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "dev": "webpack-dev-server",
-    "start": "webpack --watch",
-    "server": "nodemon server.js --ignore client",
-    "build": "webpack --mode production",
+    "start:dev": "",
+    "start": "",
+    "server": "",
+    "build": "",
     "install": "",
     "client": ""
   },
