@@ -13,13 +13,18 @@ module.exports = () => {
       main: './src/js/index.js',
       install: './src/js/install.js'
     },
-    output: {
-      filename: '[name].bundle.js',
-      path: path.resolve(__dirname, 'dist'),
+    devServer: {
+      hot: true,
+      static: './dist',
     },
     plugins: [
       new HtmlWebpackPlugin({
+        title: 'PWA',
         template: './index.html',
+      }),
+      new InjectManifest({
+        swSrc: './src-sw.js',
+        exclude: [/\.map$/, /asset-manifest\.json$/],
       }),
     new GenerateSW({
       clientsClaim: true,
@@ -61,6 +66,10 @@ module.exports = () => {
           },
         },
       ],
+    },
+    output: {
+      filename: '[name].bundle.js',
+      path: path.resolve(__dirname, 'dist'),
     },
   };
 };
