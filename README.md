@@ -66,26 +66,24 @@ The following image shows the application's IndexedDB storage:
 
 ## Grading Requirements
 
-This homework is graded based on the following criteria:
-
 ### Technical Acceptance Criteria: 40%
 
 * Satisfies all of the above acceptance criteria plus the following:
-  [] Uses IndexedDB to create an object store and includes both GET and PUT methods
-  [] The application works without an internet connection
-  [] Automatically saves content inside the text editor when the DOM window is unfocused
+  [X] Uses IndexedDB to create an object store and includes both GET and PUT methods
+  [x] The application works without an internet connection
+  [X] Automatically saves content inside the text editor when the DOM window is unfocused
   [X] Bundled with webpack
-  [] Create a service worker with workbox that Caches static assets
+  [x] Create a service worker with workbox that Caches static assets
   [X] The application should use babel in order to use async / await
   [X] Application must have a generated `manifest.json` using the `WebpackPwaManifest` plug-in
-  [] Can be installed as a Progressive Web Application
+  [x?] Can be installed as a Progressive Web Application
 
 ### Deployment: 32%
 
 [] Application deployed to Heroku at live URL with build scripts
 [] Application loads with no errors
-[] Application GitHub URL submitted
-[] GitHub repo contains application code
+[X] Application GitHub URL submitted
+[X] GitHub repo contains application code
 
 ### Application Quality: 15%
 
@@ -104,5 +102,5 @@ This homework is graded based on the following criteria:
 ## Review
 
 You are required to submit the following for review:
-* The URL of the deployed application
-* The URL of the GitHub repository, with a unique name and a README describing the project
+[] The URL of the deployed application
+[] The URL of the GitHub repository, with a unique name and a README describing the project
