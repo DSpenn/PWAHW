@@ -22,14 +22,14 @@ module.exports = () => {
         title: 'PWA',
         template: './index.html',
       }),
-      new InjectManifest({
+    /*  new InjectManifest({
         swSrc: './src-sw.js',
         exclude: [/\.map$/, /asset-manifest\.json$/],
       }),
     new GenerateSW({
       clientsClaim: true,
       skipWaiting: true,
-    }),
+    }), */
       new WebpackPwaManifest({
         name: 'PWA',
         short_name: 'PWA',
