@@ -3,9 +3,6 @@ const WebpackPwaManifest = require('webpack-pwa-manifest');
 const path = require('path');
 const { InjectManifest, GenerateSW } = require('workbox-webpack-plugin');
 
-// TODO: Add and configure workbox plugins for a service worker and manifest file.
-// TODO: Add CSS loaders and babel to webpack.
-
 module.exports = () => {
   return {
     mode: 'development',
@@ -17,7 +14,8 @@ module.exports = () => {
       hot: true,
       static: './dist',
     },
-    plugins: [
+    plugins: 
+    [
       new HtmlWebpackPlugin({
         title: 'PWA',
         template: './index.html',
@@ -30,21 +28,21 @@ module.exports = () => {
       clientsClaim: true,
       skipWaiting: true,
     }),
-      new WebpackPwaManifest({
-        name: 'PWA',
-        short_name: 'PWA',
-        description: 'Text editor',
-        background_color: '#7eb4e2',
-        theme_color: '#7eb4e2',
-        start_url: '/',
-        publicPath: '/',
-        icons: [
-          {
-            src: path.resolve('favicon.ico'),
-            sizes: [96],
-            destination: path.join('assets', 'icons'),
-          },
-        ],
+    new WebpackPwaManifest({
+      name: 'PWA',
+      short_name: 'PWA',
+      description: 'Text editor',
+      background_color: '#7eb4e2',
+      theme_color: '#7eb4e2',
+      start_url: '/',
+      publicPath: '/',
+      icons: [
+        {
+          src: path.resolve('favicon.ico'),
+          sizes: [96],
+          destination: path.join('assets', 'icons'),
+        },
+      ],
       }),
     ],
 

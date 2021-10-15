@@ -1,5 +1,14 @@
 # Unit 19 PWA Homework: Text Editor
 
+## Table of Contents
+
+  * [Your-Task](#Your-Task)
+  * [User-Story](#User-Story)
+  * [Technologies-Used](#Technologies-Used)
+  * [Acceptance-Criteria](#Acceptance-criteria)
+  * [Mock-Up](#Mock-Up)
+  * [Grading-Requirements](#Grading-Requirements)
+
 ## Your Task
 
 Your task is to build a text editor that runs in the browser. The editor will be a single page application that meets the PWA criteria. Additionally the application will feature a number of data persistence techniques that will serve as redundancy in case one of the options is not supported by the browser. The application will also function offline.
@@ -15,6 +24,14 @@ AS A developer
 I WANT to create notes or code snippets with or without an internet connection
 SO THAT I can reliably retrieve them for later use
 ```
+
+## Technologies Used
+
+express
+mongoose
+morgan
+Babel
+webpack (-cli, -dev-server, -pwa-manifest, -webpack-plugin)
 
 ## Acceptance Criteria
 
@@ -76,12 +93,12 @@ The following image shows the application's IndexedDB storage:
   [x] Create a service worker with workbox that Caches static assets
   [X] The application should use babel in order to use async / await
   [X] Application must have a generated `manifest.json` using the `WebpackPwaManifest` plug-in
-  [x?] Can be installed as a Progressive Web Application
+  [X] Can be installed as a Progressive Web Application
 
 ### Deployment: 32%
 
-[] Application deployed to Heroku at live URL with build scripts
-[] Application loads with no errors
+[X] Application deployed to Heroku at live URL with build scripts
+[X] Application loads with no errors
 [X] Application GitHub URL submitted
 [X] GitHub repo contains application code
 
@@ -89,15 +106,15 @@ The following image shows the application's IndexedDB storage:
 
 [X] Application user experience is intuitive and easy to navigate
 [X] Application user interface style is clean and polished
-[] Application resembles the mock-up functionality provided in the homework instructions
+[X] Application resembles the mock-up functionality provided in the homework instructions
 
 ### Repository Quality: 13%
 
-[] Repository has a unique name
-[] Repository follows best practices for file structure and naming conventions
-[] Repository follows best practices for class/id naming conventions, indentation, quality comments, etc.
-[] Repository contains multiple descriptive commit messages
-[] Repository contains quality README file with description, screenshot, and link to deployed application
+[X] Repository has a unique name
+[X] Repository follows best practices for file structure and naming conventions
+[X] Repository follows best practices for class/id naming conventions, indentation, quality comments, etc.
+[X] Repository contains multiple descriptive commit messages
+[X] Repository contains quality README file with description, screenshot, and link to deployed application
 
 ## Review
 

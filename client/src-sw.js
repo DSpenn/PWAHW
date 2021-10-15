@@ -30,15 +30,12 @@ registerRoute(({ request }) => request.mode === 'navigate', pageCache);
 
 const matchCallback = ({ request }) => {
   return (
-    // CSS
     request.destination === 'style' ||
-    // JavaScript
     request.destination === 'script'
   );
 };
 
 // Register route for caching images
-// The cache first strategy is often the best choice for images because it saves bandwidth and improves performance.
 registerRoute(
   ({ request }) => request.destination === 'image',
   new CacheFirst({
@@ -61,7 +58,6 @@ registerRoute(
   new StaleWhileRevalidate({
     cacheName,
     plugins: [
-      // This plugin will cache responses with these headers to a maximum-age of 30 days
       new CacheableResponsePlugin({
         statuses: [0, 200],
       }),
