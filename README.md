@@ -2,20 +2,27 @@
 
 ## Table of Contents
 
-  * [Your-Task](#Your-Task)
-  * [User-Story](#User-Story)
+  * [Description](#Description)
   * [Technologies-Used](#Technologies-Used)
+  * [User-Story](#User-Story)
   * [Acceptance-Criteria](#Acceptance-criteria)
-  * [Mock-Up](#Mock-Up)
+  * [Images](#Images)
   * [Grading-Requirements](#Grading-Requirements)
 
-## Your Task
+## Description
 
-Your task is to build a text editor that runs in the browser. The editor will be a single page application that meets the PWA criteria. Additionally the application will feature a number of data persistence techniques that will serve as redundancy in case one of the options is not supported by the browser. The application will also function offline.
+A text editor that runs in the browser. The editor will be a single page application that meets the PWA criteria. Additionally the application will feature a number of data persistence techniques that will serve as redundancy in case one of the options is not supported by the browser. The application will also function offline.
+Getting and storing data to an IndexedDB database. using `idb`.
 
-You will take an existing application that is already built and implement the methods for getting and storing data to an IndexedDB database. You will be using a package called `idb`, which is a lightweight wrapper around the IndexedDB API. It features a number of methods that are useful for storing and retrieving data, and is used by companies like Google and Mozilla.
-
-You will deploy this full stack application to Heroku using the [Heroku Deployment Guide on The Full-Stack Blog](https://coding-boot-camp.github.io/full-stack/heroku/heroku-deployment-guide).
+## Technologies Used
+```md
+express
+mongoose
+morgan
+Babel
+webpack (-cli, -dev-server, -pwa-manifest, -webpack-plugin)
+idb
+```
 
 ## User Story
 
@@ -24,14 +31,6 @@ AS A developer
 I WANT to create notes or code snippets with or without an internet connection
 SO THAT I can reliably retrieve them for later use
 ```
-
-## Technologies Used
-
-express
-mongoose
-morgan
-Babel
-webpack (-cli, -dev-server, -pwa-manifest, -webpack-plugin)
 
 ## Acceptance Criteria
 
@@ -63,26 +62,14 @@ WHEN I deploy to Heroku
 THEN I should have proper build scripts for a webpack application
 ```
 
-## Mock-Up
+## Image
 
-The following animation demonstrates the application functionality:
 
-![Demonstration of the finished Unit 19 Homework being used in the browser and then installed.](./Assets/00-demo.gif)
-
-The following image shows the application's `manifest.json` file:
-
-![Demonstration of the finished Unit 19 Homework with a manifest file in the browser.](./Assets/01-manifest.png)
-
-The following image shows the application's registered service worker:
-
-![Demonstration of the finished Unit 19 Homework with a registered service worker in the browser.](./Assets/02-service-worker.png)
-
-The following image shows the application's IndexedDB storage:
-
-![Demonstration of the finished Unit 19 Homework with a IndexedDB storage named 'jate' in the browser.](./Assets/03-idb-storage.png)
 
 ## Grading Requirements
 
+
+```md
 ### Technical Acceptance Criteria: 40%
 
 * Satisfies all of the above acceptance criteria plus the following:
@@ -90,34 +77,27 @@ The following image shows the application's IndexedDB storage:
   [x] The application works without an internet connection
   [X] Automatically saves content inside the text editor when the DOM window is unfocused
   [X] Bundled with webpack
-  [x] Create a service worker with workbox that Caches static assets
+  [X] Create a service worker with workbox that Caches static assets
   [X] The application should use babel in order to use async / await
   [X] Application must have a generated `manifest.json` using the `WebpackPwaManifest` plug-in
   [X] Can be installed as a Progressive Web Application
-
 ### Deployment: 32%
-
 [X] Application deployed to Heroku at live URL with build scripts
 [X] Application loads with no errors
 [X] Application GitHub URL submitted
 [X] GitHub repo contains application code
-
 ### Application Quality: 15%
-
 [X] Application user experience is intuitive and easy to navigate
 [X] Application user interface style is clean and polished
 [X] Application resembles the mock-up functionality provided in the homework instructions
-
 ### Repository Quality: 13%
-
 [X] Repository has a unique name
 [X] Repository follows best practices for file structure and naming conventions
 [X] Repository follows best practices for class/id naming conventions, indentation, quality comments, etc.
 [X] Repository contains multiple descriptive commit messages
 [X] Repository contains quality README file with description, screenshot, and link to deployed application
-
 ## Review
-
 You are required to submit the following for review:
-[] The URL of the deployed application
-[] The URL of the GitHub repository, with a unique name and a README describing the project
+[X] The URL of the deployed application
+[X] The URL of the GitHub repository, with a unique name and a README describing the project
+```
