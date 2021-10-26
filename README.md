@@ -1,12 +1,12 @@
 # Unit 19 PWA Homework: Text Editor
 
 ## Table of Contents
-
+  * [Heroku deployed](https://floating-tundra-48465.herokuapp.com)
   * [Description](#Description)
   * [Technologies-Used](#Technologies-Used)
   * [User-Story](#User-Story)
+  * [Image](#Image)
   * [Acceptance-Criteria](#Acceptance-criteria)
-  * [Images](#Images)
   * [Grading-Requirements](#Grading-Requirements)
 
 ## Description
@@ -18,11 +18,8 @@ Getting and storing data to an IndexedDB database. using `idb`.
 ## Technologies Used
 ```md
 express
-mongoose
-morgan
-Babel
-webpack (-cli, -dev-server, -pwa-manifest, -webpack-plugin)
 idb
+webpack (-cli, -dev-server, -pwa-manifest, -webpack-plugin)
 ```
 
 ## User Story
@@ -32,6 +29,11 @@ AS A developer
 I WANT to create notes or code snippets with or without an internet connection
 SO THAT I can reliably retrieve them for later use
 ```
+
+## Image
+
+![Application Image](./Assets/jate.JPG)
+
 
 ## Acceptance Criteria
 
@@ -62,10 +64,6 @@ THEN I should have my static assets pre cached upon loading along with subsequen
 WHEN I deploy to Heroku
 THEN I should have proper build scripts for a webpack application
 ```
-
-## Image
-
-![Application Image](./Assets/jate.jpg)
 
 ## Grading Requirements
 
