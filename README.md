@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Unit 19 PWA Homework: Text Editor
 
 ## Table of Contents
@@ -100,3 +101,6 @@ You are required to submit the following for review:
 [X] The URL of the deployed application
 [X] The URL of the GitHub repository, with a unique name and a README describing the project
 ```
+=======
+# PWAHW
+>>>>>>> c2194df6ed80e2aa4007eb4ab22eb27c7ae2e984
