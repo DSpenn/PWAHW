@@ -11,8 +11,8 @@
 
 ## Description
 
-A text editor that runs in the browser. The editor will be a single page application that meets the PWA criteria. Additionally the application will feature a number of data persistence techniques that will serve as redundancy in case one of the options is not supported by the browser. The application will also function offline.
-Getting and storing data to an IndexedDB database. using `idb`.
+A text editor that runs in the browser. The editor is a single page application that meets the PWA criteria. Additionally the application features a number of data persistence techniques that will serve as redundancy in case one of the options is not supported by the browser. The application also functions offline.
+Getting and storing data to an IndexedDB database using `idb`
 [Heroku deployed](https://floating-tundra-48465.herokuapp.com)
 
 ## Technologies Used
