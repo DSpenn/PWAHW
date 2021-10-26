@@ -65,7 +65,7 @@ THEN I should have proper build scripts for a webpack application
 
 ## Image
 
-![Application Image](./Assets/jate.jpg)
+![Application Image](./Assets/jate.JPG)
 
 ## Grading Requirements
 
